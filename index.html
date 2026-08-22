@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal | Desenvolvedor & Suporte</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO VISÍVEL -->
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Meu Portfólio</h1>
+            
+            <!-- Botão do menu hambúrguer para dispositivos móveis -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão para alternar entre Tema Claro e Escuro -->
+            <button id="theme-toggle" class="theme-btn">🌙 Modo Escuro</button>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (SEÇÕES DO SITE) -->
+    <main class="container">
+
+        <!-- 1. SEÇÃO SOBRE MIM -->
+        <section id="sobre" class="section">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <p>Olá! Sou um profissional entusiasta da tecnologia, atuando atualmente na área de suporte técnico/ service desk, com grande interesse no desenvolvimento de software e automação e tecnologias Web.</p>
+                <p>Busco constantemente aprimorar minhas habilidades em desenvolvimento, construindo soluções eficientes e funcionais.</p>
+                <h3>Hobbies & Interesses</h3>
+                <ul>
+                    <li>Atividades ao ar livre</li>
+                    <li>Leitura de livros e artigos técnicos</li>
+                    <li> Assistir a filmes e séries de ficção científica</li>
+                    <li> Jogos digitais e tecnologia</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 2. SEÇÃO FORMAÇÃO -->
+        <section id="formacao" class="section">
+            <h2>Formação & Qualificações</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Educação Acadêmica</h3>
+                    <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+                    <p><strong>Instituição:</strong> Centro Universitário Uninter</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                </div>
+                <div class="card">
+                    <h3>Cursos & Certificações</h3>
+                    <ul>
+                
+                        <li>Gerenciamento e Infraestrutura de Redes / Fibra Óptica</li>
+                        <li>Fundamentos do suporte técnico</li>
+                        <li>Soft Skills</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Idiomas & Competências</h3>
+                    <ul>
+                        <li><strong>Português:</strong> Nativo</li>
+                        <li><strong>Inglês:</strong> Técnico / Leitura de documentações</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SEÇÃO PORTFÓLIO -->
+        <section id="portfolio" class="section">
+            <h2>Portfólio & Projetos</h2>
+            <p>Confira alguns dos projetos desenvolvidos e códigos em destaque:</p>
+            <div class="cards-grid">
+                
+                <div class="card">
+                    <h3>Atividade de banco de dados(ADS)</h3>
+                    <p>Implementação de banco de dados relacional em MySQL para gerenciamento de informações.</p>
+                    <a href="https://github.com/Hkalleu/Banco-de-dados-/blob/main/MySQL" target="_blank" class="btn-link">Ver no GitHub &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Página Web Comercial (em andamento) </h3>
+                    <p>Desenvolvimento de landing page profissional e responsiva para prestação de serviços de limpeza predial e outros serviços braçais.</p>
+                    <a href="https://hkalleu.github.io/Teste-pagina/" target="_blank" class="btn-link">Ver no GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SEÇÃO CONTATO COM FORMULÁRIO -->
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <p>Preencha o formulário abaixo para entrar em contato comigo:</p>
+            
+            <form id="contact-form" class="form-container" novalidate>
+                <!-- Mensagem de feedback do envio -->
+                <div id="form-message" class="form-message"></div>
+
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <span class="error-text" id="error-nome"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@dominio.com">
+                    <span class="error-text" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..."></textarea>
+                    <span class="error-text" id="error-mensagem"></span>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Desenvolvido para a Atividade Prática de Fundamentos da Programação Web.</p>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
